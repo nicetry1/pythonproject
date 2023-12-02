@@ -6,7 +6,7 @@ all_fields = {}
 with open(path_to_file, 'r') as aa_file:
     for line in aa_file:
        
-       data = usjon.loads(line)
+       data = ujson.loads(line)
        #print(data['metadata']['oclc_number'])
         for key in data['metadata']['record']:
           if key not in all_fields:
