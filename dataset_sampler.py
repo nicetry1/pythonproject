@@ -16,8 +16,8 @@ def generate_random_sample(input_file, output_file, sample_size):
 
 if __name__ == '__main__':
     #define filepaths and sample size
-    input_file_path = ''
-    output_file_path = ''
+    input_file_path = '/Volumes/LaCie/2023 python datasets/providersearchrequest_json.jsonl'
+    output_file_path = '/Users/nicetry/Documents/GitHub/nextapp/pythonproject/data/random_providersearch.jsonl'
     sample_size = 10000
 
 #call function
