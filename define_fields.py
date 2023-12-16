@@ -8,7 +8,7 @@ with open(path_to_file, 'r') as aa_file:
        
        data = ujson.loads(line)
        #print(data['metadata']['oclc_number'])
-        for key in data['metadata']['record']:
+       for key in data['metadata']['record']:
           if key not in all_fields:
              all_fields[key] = 0
-        break
+       break

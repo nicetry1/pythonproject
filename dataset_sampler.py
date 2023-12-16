@@ -4,7 +4,7 @@ import json
 def generate_random_sample(input_file, output_file, sample_size):
     with open(input_file,'r') as input_stream:
         #read all lines from input
-        all_lines = [json.loads(line) for line in input_stream]
+        all_lines = [json.loads(line["aacid"]) for line in input_stream]
 
         #sample lines
         random_sample = random.sample(all_lines, min(sample_size, len(all_lines)))
