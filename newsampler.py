@@ -2,7 +2,7 @@ import random
 import json
 
 def generate_random_sample(input_file, output_file, sample_size):
-with open(input_file, 'r') as input_stream, open(output_file, 'w') as output_stream:
+    with open(input_file, 'r') as input_stream, open(output_file, 'w') as output_stream:
        
         #initialize JSON decoder
         json_decoder = json.JSONDecoder()
