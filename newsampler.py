@@ -19,11 +19,11 @@ def generate_random_sample(input_file, output_file, sample_size):
 
                 i += 1
 
-                #print progress message 
+                #progress message 
                 if i % 100 == 0:
                         print(f'processed {i} lines')
 
-                #stop processing if the desired sample size is reached
+                #stop processing when sample reached
                 if i >= sample_size:
                         break
                 
