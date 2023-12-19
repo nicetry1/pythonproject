@@ -1,5 +1,6 @@
 import random
 import ujson
+from tqdm import tqdm
 
 def generate_random_sample(input_file, output_file, sample_size):
   
@@ -28,4 +29,4 @@ if __name__ == '__main__':
     sample_size = 1000
 
 #start function
-generate_random_sample(input_file_path, output_file_path, sample_size)
+tqdm(generate_random_sample(input_file_path, output_file_path, sample_size))

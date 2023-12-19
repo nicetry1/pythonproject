@@ -1,9 +1,10 @@
 import ujson
+import sys
 
-
-path_to_file = "/Volumes/NextGlum/aa_oclc/briefrecords_json.jsonl"
+path_to_file = sys.argv[1]
 counter = 0
 all_fields = {}
+
 with open(path_to_file, 'r') as aa_file:
 
     for line in aa_file:
@@ -15,7 +16,7 @@ with open(path_to_file, 'r') as aa_file:
 
 
         data = ujson.loads(line)
-        for key in data['metadata']['record']:
+        for key in data['record']:
             if key not in all_fields:
                 all_fields[key] = 0
             
